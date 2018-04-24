@@ -18,6 +18,7 @@ import java.util.Date;
 @Data//lombok自动装配
 //使用JPA注解配置映射关系
 public class ProductCategory {
+
     /**
      * 分类ID
      */

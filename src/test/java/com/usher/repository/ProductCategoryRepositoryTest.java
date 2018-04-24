@@ -40,4 +40,12 @@ public class ProductCategoryRepositoryTest {
         List<ProductCategory> res = repository.findByCategoryTypeIn(list);
         Assert.assertNotEquals(0,res.size());
     }
+    @Test
+    public void updateTest(){
+        ProductCategory productCategory = new ProductCategory("love",2);
+        ProductCategory res = repository.save(productCategory);
+        Assert.assertEquals(productCategory,res);
+
+
+    }
 }

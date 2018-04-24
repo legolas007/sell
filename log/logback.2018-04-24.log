@@ -1,0 +1,100 @@
+23:06:30.776 logback [main] INFO  c.u.r.ProductCategoryRepositoryTest - Starting ProductCategoryRepositoryTest on DESKTOP-V341JIN with PID 55840 (started by 24219 in D:\sell)
+23:06:30.778 logback [main] INFO  c.u.r.ProductCategoryRepositoryTest - No active profile set, falling back to default profiles: default
+23:06:30.958 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@62dae245: startup date [Tue Apr 24 23:06:30 CST 2018]; root of context hierarchy
+23:06:32.492 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+23:06:33.787 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:06:34.045 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:06:34.133 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductCategoryRepository.
+23:06:35.714 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+23:06:36.416 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff2b18fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:06:41.076 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:06:42.212 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+23:06:42.284 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+23:06:42.717 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+23:06:42.722 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+23:06:42.731 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+23:06:43.234 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+23:06:43.846 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:06:46.609 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:06:49.234 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@62dae245: startup date [Tue Apr 24 23:06:30 CST 2018]; root of context hierarchy
+23:06:49.488 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+23:06:49.492 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+23:06:49.601 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:06:49.602 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:06:49.741 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:06:52.239 logback [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@62dae245: startup date [Tue Apr 24 23:06:30 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+23:06:52.242 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+23:06:52.294 logback [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+23:06:53.100 logback [main] INFO  c.u.r.ProductCategoryRepositoryTest - Started ProductCategoryRepositoryTest in 24.426 seconds (JVM running for 30.441)
+23:08:51.174 logback [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@62dae245: startup date [Tue Apr 24 23:06:30 CST 2018]; root of context hierarchy
+23:08:51.182 logback [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:08:51.191 logback [Thread-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+23:29:49.083 logback [main] INFO  c.u.s.impl.CategoryServiceImplTest - Starting CategoryServiceImplTest on DESKTOP-V341JIN with PID 27100 (started by 24219 in D:\sell)
+23:29:49.085 logback [main] INFO  c.u.s.impl.CategoryServiceImplTest - No active profile set, falling back to default profiles: default
+23:29:49.308 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5ab14cb9: startup date [Tue Apr 24 23:29:49 CST 2018]; root of context hierarchy
+23:29:51.482 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+23:29:53.161 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:29:53.543 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:29:53.627 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductCategoryRepository.
+23:29:55.944 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+23:29:57.046 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3015e39c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:30:01.848 logback [main] INFO  c.u.s.impl.CategoryServiceImplTest - Starting CategoryServiceImplTest on DESKTOP-V341JIN with PID 12920 (started by 24219 in D:\sell)
+23:30:01.861 logback [main] INFO  c.u.s.impl.CategoryServiceImplTest - No active profile set, falling back to default profiles: default
+23:30:02.074 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@14bdbc74: startup date [Tue Apr 24 23:30:02 CST 2018]; root of context hierarchy
+23:30:02.443 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:30:03.840 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+23:30:05.009 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+23:30:05.129 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+23:30:05.642 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+23:30:05.647 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+23:30:05.651 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+23:30:05.927 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:30:06.342 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+23:30:06.435 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+23:30:06.497 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductCategoryRepository.
+23:30:06.922 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:30:08.237 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+23:30:08.922 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db2b2bf7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:30:12.593 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+23:30:12.889 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:30:13.505 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+23:30:13.582 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+23:30:13.945 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+23:30:13.950 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+23:30:13.954 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+23:30:14.244 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+23:30:15.572 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+23:30:17.907 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5ab14cb9: startup date [Tue Apr 24 23:29:49 CST 2018]; root of context hierarchy
+23:30:18.422 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+23:30:18.425 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+23:30:18.576 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:30:18.577 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:30:18.800 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:30:21.172 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:30:21.672 logback [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@5ab14cb9: startup date [Tue Apr 24 23:29:49 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+23:30:21.676 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+23:30:21.813 logback [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+23:30:24.321 logback [main] INFO  c.u.s.impl.CategoryServiceImplTest - Started CategoryServiceImplTest in 37.284 seconds (JVM running for 42.541)
+23:30:25.972 logback [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@5ab14cb9: startup date [Tue Apr 24 23:29:49 CST 2018]; root of context hierarchy
+23:30:25.982 logback [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:30:25.994 logback [Thread-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+23:30:28.677 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@14bdbc74: startup date [Tue Apr 24 23:30:02 CST 2018]; root of context hierarchy
+23:30:28.978 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+23:30:28.980 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+23:30:29.123 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:30:29.125 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:30:29.364 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:30:31.092 logback [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@14bdbc74: startup date [Tue Apr 24 23:30:02 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+23:30:31.096 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+23:30:31.153 logback [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+23:30:31.766 logback [main] INFO  c.u.s.impl.CategoryServiceImplTest - Started CategoryServiceImplTest in 33.944 seconds (JVM running for 43.348)
+23:30:32.180 logback [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+23:30:32.997 logback [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@14bdbc74: startup date [Tue Apr 24 23:30:02 CST 2018]; root of context hierarchy
+23:30:33.006 logback [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+23:30:33.014 logback [Thread-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
