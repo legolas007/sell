@@ -16,7 +16,7 @@ import java.util.Date;
 @Entity//告诉JPA这是一个实体类（和数据表映射的类）
 @DynamicUpdate
 @Data//lombok自动装配
-//使用JPA注解配置映射关系
+//使用JPA注解配置映射关系，根据数据库表编写实体类
 public class ProductCategory {
 
     /**
