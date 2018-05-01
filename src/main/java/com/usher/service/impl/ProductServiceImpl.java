@@ -1,14 +1,18 @@
 package com.usher.service.impl;
 
+import com.usher.dto.CartDTO;
 import com.usher.entities.ProductCategory;
 import com.usher.entities.ProductInfo;
 import com.usher.enums.ProductStatusEnum;
+import com.usher.enums.ResultEnum;
+import com.usher.exception.SellException;
 import com.usher.repository.ProductInfoRepository;
 import com.usher.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -40,5 +44,35 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ProductInfo save(ProductInfo productInfo) {
         return repository.save(productInfo);
+    }
+
+    @Override
+    @Transactional
+    public void increaseStock(List<CartDTO> cartDTOList) {
+        for (CartDTO cartDTO : cartDTOList){
+            ProductInfo productInfo = repository.findOne(cartDTO.getProductId());
+            if (productInfo == null)
+                throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+            Integer res = productInfo.getProductStock() + cartDTO.getProductQuantity();
+            productInfo.setProductStock(res);
+            repository.save(productInfo);
+        }
+
+    }
+
+    @Override
+    @Transactional//事务管理
+    public void decreaseStock(List<CartDTO> cartDTOList) {
+        for (CartDTO cartDTO : cartDTOList){
+            ProductInfo productInfo = repository.findOne(cartDTO.getProductId());
+            if (productInfo == null)
+                throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+            Integer res = productInfo.getProductStock() - cartDTO.getProductQuantity();
+            if (res < 0)
+                throw new SellException(ResultEnum.PRODUCT_STOCK_ERROR);
+
+            productInfo.setProductStock(res);
+            repository.save(productInfo);
+        }
     }
 }
