@@ -1,0 +1,407 @@
+16:21:58.422 logback [main] INFO  com.usher.SellApplication - Starting SellApplication on DESKTOP-V341JIN with PID 9784 (D:\sell\target\classes started by 24219 in D:\sell)
+16:21:58.425 logback [main] INFO  com.usher.SellApplication - No active profile set, falling back to default profiles: default
+16:21:58.469 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a52dba3: startup date [Wed May 02 16:21:58 CST 2018]; root of context hierarchy
+16:21:58.646 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+16:22:00.064 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:22:00.131 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:22:00.158 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderDetailRepository.
+16:22:00.159 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderMasterRepository.
+16:22:00.160 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductInfoRepository.
+16:22:00.160 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductCategoryRepository.
+16:22:00.405 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+16:22:00.523 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$783f2253] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:22:00.947 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+16:22:00.963 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:22:00.975 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:22:00.976 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+16:22:01.593 logback [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+16:22:01.593 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3124 ms
+16:22:01.800 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+16:22:01.801 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:22:01.804 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:22:01.805 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:22:01.805 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:22:01.805 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:22:01.805 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+16:22:02.277 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:22:02.503 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+16:22:02.516 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:22:02.594 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+16:22:02.595 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+16:22:02.596 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+16:22:02.646 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16:22:02.927 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:22:03.343 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:22:04.035 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a52dba3: startup date [Wed May 02 16:21:58 CST 2018]; root of context hierarchy
+16:22:04.105 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.usher.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.usher.controller.BuyerOrderController.create(com.usher.form.OrderForm,org.springframework.validation.BindingResult)
+16:22:04.106 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.usher.VO.ResultVO<java.util.List<com.usher.dto.OrderDTO>> com.usher.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+16:22:04.106 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+16:22:04.106 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+16:22:04.107 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerProductController.list()
+16:22:04.107 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.usher.controller.WxController.auth(java.lang.String)
+16:22:04.108 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.usher.wx.WxToken.test(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+16:22:04.109 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:22:04.109 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:22:04.136 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:22:04.136 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:22:04.170 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:22:04.600 logback [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3a52dba3: startup date [Wed May 02 16:21:58 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+16:22:04.601 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+16:22:04.623 logback [main] WARN  o.s.b.a.f.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+16:22:04.745 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:22:04.746 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druid' has been autodetected for JMX exposure
+16:22:04.751 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druid': registering with JMX server as MBean [com.alibaba.druid.pool:name=druid,type=DruidDataSource]
+16:22:04.761 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:22:04.773 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:22:04.788 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+16:22:04.793 logback [main] INFO  com.usher.SellApplication - Started SellApplication in 6.914 seconds (JVM running for 12.344)
+16:30:46.131 logback [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:30:46.132 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+16:30:46.157 logback [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+16:30:46.189 logback [http-nio-8080-exec-1] INFO  com.usher.controller.WxController - access to auth
+16:30:46.189 logback [http-nio-8080-exec-1] INFO  com.usher.controller.WxController - code=071AbEg91DU5KP1lAYf91eBUg91AbEgT
+16:30:47.149 logback [http-nio-8080-exec-1] INFO  com.usher.controller.WxController - response={"access_token":"9_KJwKGYzIfrneIY3BrtFekuclyL3DXg4wTSlOasCl7i6wQspsA4gtJpRLzmWtbfgzJMyFtirQLKgBC-LW0rc-OPQ5i2HAlv1ekeDjK7hIQ28","expires_in":7200,"refresh_token":"9_I3cHFLaFxUk907rQVHTpXhfRE89KoNe1JdzzE45vF2UtWRlSWyRc00UEUZvozE1SSbutdNtWS3Q5QZVzIrXjSkhXB0z14BtFUtcjtPB3yss","openid":"o8IUb1NtB839LIEWg3hrx7ksRHBI","scope":"snsapi_base"}
+16:31:02.865 logback [http-nio-8080-exec-2] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+16:31:08.776 logback [http-nio-8080-exec-3] INFO  com.usher.controller.WxController - access to auth
+16:31:08.777 logback [http-nio-8080-exec-3] INFO  com.usher.controller.WxController - code=001AS1822Y49jZ05pha22uvd822AS18q
+16:31:08.978 logback [http-nio-8080-exec-3] INFO  com.usher.controller.WxController - response={"access_token":"9_zDSHPDAMdjLtx8dvhnDRIqFMLPQinsJbVnSr9jnqnSV_Lw5MAdExniNpxMPQQHiGa-5QN9eALGBShTc1A9DFQziyX3euS2N6qqJn9Burhl4","expires_in":7200,"refresh_token":"9_RfuzrxKBMbctcAgGZwViKVIi0EMjfkNC2FOzOb26W74jg6ZJc_NdpWRFXwD2_PlKFGtUC9oht4p-_rRgwXeIJ0SRIWyXhSZxVS6e7IjHi1M","openid":"o8IUb1NtB839LIEWg3hrx7ksRHBI","scope":"snsapi_base"}
+16:35:11.194 logback [http-nio-8080-exec-6] INFO  com.usher.controller.WxController - access to auth
+16:35:11.194 logback [http-nio-8080-exec-6] INFO  com.usher.controller.WxController - code=001u7Y0h2rnu7I02684h2ODS0h2u7Y0Z
+16:35:11.370 logback [http-nio-8080-exec-6] INFO  com.usher.controller.WxController - response={"access_token":"9_ZQ_42bv8s3SNF8yQLbX1Mk9JcHzLFEQAsBDGl2zToHxOPzZFWSOFy0TSTjicQhkttepIfcGMWAW385NPTXLVRrg4ojP0WYMvxyKhG18ebl8","expires_in":7200,"refresh_token":"9_6BmWDv_dkBl2MDnmf0oeu-pK3bOeRklW8vXcMU0nnOl-qhsoA00RXBMnbsM3pWtvR2yhvN9oYYqDhY59XB7zRQDdcbs3eYeJEUNnzUvD3ew","openid":"o8IUb1NtB839LIEWg3hrx7ksRHBI","scope":"snsapi_base"}
+16:36:14.563 logback [http-nio-8080-exec-7] INFO  com.usher.controller.WxController - access to auth
+16:36:14.564 logback [http-nio-8080-exec-7] INFO  com.usher.controller.WxController - code=011z5YFa1YWVyu0uTuIa1JA5Ga1z5YFc
+16:36:14.762 logback [http-nio-8080-exec-7] INFO  com.usher.controller.WxController - response={"access_token":"9_m1cT9wsirpyVS1OHEwvSOKEsvIOFjQafUUbz4AOld5Eomip9tqzwtnQoV46SGDHAw6vCn4wJJlDubPYsdnhjTnMRKhYzCXmlD5hQIe5olTM","expires_in":7200,"refresh_token":"9_kCn2Tehz9XUyGdI_9i3Z_rwJXzrJAqgC1gP4SBWK0NyhGV7x49IU0a4DX3glh9D3oeOWwPaQtyzoYNLCePhnN6cY_c2v4PT6VDS_JHcwGhE","openid":"o8IUb1NtB839LIEWg3hrx7ksRHBI","scope":"snsapi_base"}
+16:37:52.144 logback [http-nio-8080-exec-9] INFO  com.usher.controller.WxController - access to auth
+16:37:52.145 logback [http-nio-8080-exec-9] INFO  com.usher.controller.WxController - code=001pej9M16RG161Z8U9M1NNq9M1pej96
+16:37:52.420 logback [http-nio-8080-exec-9] INFO  com.usher.controller.WxController - response={"access_token":"9_sKgo6oHiKpzDMOsMVqKHPCxD_Erm80F2vtWnaLJy0VjpLERYfOuyAuMoV8s_CIOvsFvJNk94FbnTCvjnrSLtL__vhhhOoO7Udm6kOYINE-w","expires_in":7200,"refresh_token":"9_ssRZPLRuj01i7ZszhCzryMnyldx_9H0EYvufPKg0JFAPp4cBPTUwhKvd9iaCHUx9yE2joBNSMRB-IM_2P4j4EBN_s9HlkVap6GF9TE_gsbM","openid":"o8IUb1NtB839LIEWg3hrx7ksRHBI","scope":"snsapi_userinfo"}
+17:47:30.455 logback [main] INFO  com.usher.SellApplication - Starting SellApplication on DESKTOP-V341JIN with PID 13244 (D:\sell\target\classes started by 24219 in D:\sell)
+17:47:30.489 logback [main] INFO  com.usher.SellApplication - No active profile set, falling back to default profiles: default
+17:47:30.544 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41a2befb: startup date [Wed May 02 17:47:30 CST 2018]; root of context hierarchy
+17:47:30.700 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+17:47:31.724 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:47:31.793 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:47:31.823 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderDetailRepository.
+17:47:31.824 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderMasterRepository.
+17:47:31.824 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductInfoRepository.
+17:47:31.825 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductCategoryRepository.
+17:47:32.153 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+17:47:32.277 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cdcfb130] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:47:32.719 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+17:47:32.738 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:47:32.752 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:47:32.753 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+17:47:32.943 logback [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+17:47:32.943 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2399 ms
+17:47:33.176 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+17:47:33.177 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+17:47:33.181 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:47:33.182 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:47:33.182 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:47:33.182 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:47:33.182 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+17:47:33.728 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:47:34.017 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+17:47:34.032 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+17:47:34.154 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+17:47:34.157 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+17:47:34.159 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+17:47:34.269 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17:47:34.664 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+17:47:35.139 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:47:36.392 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41a2befb: startup date [Wed May 02 17:47:30 CST 2018]; root of context hierarchy
+17:47:36.459 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.usher.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.usher.controller.BuyerOrderController.create(com.usher.form.OrderForm,org.springframework.validation.BindingResult)
+17:47:36.460 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.usher.VO.ResultVO<java.util.List<com.usher.dto.OrderDTO>> com.usher.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+17:47:36.460 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+17:47:36.461 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+17:47:36.461 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerProductController.list()
+17:47:36.462 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.usher.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+17:47:36.462 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.usher.controller.WechatController.authorize(java.lang.String)
+17:47:36.463 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.usher.controller.WxController.auth(java.lang.String)
+17:47:36.464 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.usher.wx.WxToken.test(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+17:47:36.465 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:47:36.465 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:47:36.491 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:47:36.491 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:47:36.527 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:47:36.952 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+17:47:37.116 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+17:47:37.118 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druid' has been autodetected for JMX exposure
+17:47:37.124 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druid': registering with JMX server as MBean [com.alibaba.druid.pool:name=druid,type=DruidDataSource]
+17:47:37.135 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:47:37.147 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:47:37.173 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+17:47:37.179 logback [main] INFO  com.usher.SellApplication - Started SellApplication in 7.601 seconds (JVM running for 9.196)
+17:50:03.780 logback [http-nio-8080-exec-8] INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:50:03.780 logback [http-nio-8080-exec-8] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+17:50:03.830 logback [http-nio-8080-exec-8] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
+20:38:38.330 logback [main] INFO  com.usher.SellApplication - Starting SellApplication on DESKTOP-V341JIN with PID 31808 (D:\sell\target\classes started by 24219 in D:\sell)
+20:38:38.370 logback [main] INFO  com.usher.SellApplication - No active profile set, falling back to default profiles: default
+20:38:38.451 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41a2befb: startup date [Wed May 02 20:38:38 CST 2018]; root of context hierarchy
+20:38:38.696 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+20:38:40.622 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:38:40.751 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:38:40.820 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderDetailRepository.
+20:38:40.822 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderMasterRepository.
+20:38:40.823 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductInfoRepository.
+20:38:40.823 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductCategoryRepository.
+20:38:41.377 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+20:38:41.626 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$26cbf4e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:38:42.297 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+20:38:42.315 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:38:42.328 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:38:42.329 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+20:38:42.538 logback [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring embedded WebApplicationContext
+20:38:42.538 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4087 ms
+20:38:42.770 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+20:38:42.771 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+20:38:42.775 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+20:38:42.776 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20:38:42.776 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20:38:42.776 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+20:38:42.776 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+20:38:43.326 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+20:38:43.576 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+20:38:43.591 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:38:43.690 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+20:38:43.696 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+20:38:43.697 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+20:38:43.771 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20:38:44.101 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:38:44.671 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:38:45.980 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41a2befb: startup date [Wed May 02 20:38:38 CST 2018]; root of context hierarchy
+20:38:46.050 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.usher.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.usher.controller.BuyerOrderController.create(com.usher.form.OrderForm,org.springframework.validation.BindingResult)
+20:38:46.051 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.usher.VO.ResultVO<java.util.List<com.usher.dto.OrderDTO>> com.usher.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+20:38:46.052 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+20:38:46.052 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+20:38:46.053 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerProductController.list()
+20:38:46.053 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.usher.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+20:38:46.054 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.usher.controller.WechatController.authorize(java.lang.String)
+20:38:46.054 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.usher.controller.WxController.auth(java.lang.String)
+20:38:46.054 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.usher.wx.WxToken.test(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+20:38:46.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20:38:46.056 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20:38:46.082 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:38:46.082 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:38:46.120 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:38:46.558 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+20:38:46.812 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+20:38:46.814 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'druid' has been autodetected for JMX exposure
+20:38:46.824 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'druid': registering with JMX server as MBean [com.alibaba.druid.pool:name=druid,type=DruidDataSource]
+20:38:46.837 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:38:46.853 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+20:38:46.874 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+20:38:46.880 logback [main] INFO  com.usher.SellApplication - Started SellApplication in 9.186 seconds (JVM running for 10.995)
+21:21:39.196 logback [http-nio-8080-exec-4] INFO  o.a.c.c.C.[.[localhost].[/sell] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+21:21:39.205 logback [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+21:21:39.453 logback [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 248 ms
+21:21:40.132 logback [http-nio-8080-exec-4] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+22:10:05.664 logback [main] INFO  c.u.service.impl.PayServiceImplTest - Starting PayServiceImplTest on DESKTOP-V341JIN with PID 17604 (started by 24219 in D:\sell)
+22:10:05.666 logback [main] INFO  c.u.service.impl.PayServiceImplTest - No active profile set, falling back to default profiles: default
+22:10:05.766 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6bb4dd34: startup date [Wed May 02 22:10:05 CST 2018]; root of context hierarchy
+22:10:06.753 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+22:10:08.496 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:10:08.629 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:10:08.681 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderDetailRepository.
+22:10:08.683 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderMasterRepository.
+22:10:08.684 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductInfoRepository.
+22:10:08.685 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductCategoryRepository.
+22:10:09.422 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:10:09.722 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$52283aef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:10:10.780 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+22:10:11.247 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+22:10:11.285 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+22:10:11.444 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+22:10:11.447 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+22:10:11.451 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+22:10:11.565 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22:10:12.016 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+22:10:13.607 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:10:16.635 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6bb4dd34: startup date [Wed May 02 22:10:05 CST 2018]; root of context hierarchy
+22:10:16.765 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.usher.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.usher.controller.BuyerOrderController.create(com.usher.form.OrderForm,org.springframework.validation.BindingResult)
+22:10:16.767 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.usher.VO.ResultVO<java.util.List<com.usher.dto.OrderDTO>> com.usher.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+22:10:16.767 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+22:10:16.768 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+22:10:16.769 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerProductController.list()
+22:10:16.770 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.usher.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+22:10:16.770 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.usher.controller.WechatController.authorize(java.lang.String)
+22:10:16.771 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.usher.controller.WxController.auth(java.lang.String)
+22:10:16.772 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.usher.wx.WxToken.test(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+22:10:16.776 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:10:16.777 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:10:16.831 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:10:16.832 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:10:16.914 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:10:17.692 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+22:10:18.104 logback [main] INFO  c.u.service.impl.PayServiceImplTest - Started PayServiceImplTest in 13.406 seconds (JVM running for 16.296)
+22:10:18.384 logback [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+22:10:18.638 logback [main] INFO  c.usher.service.impl.PayServiceImpl - 【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525170517349514044",
+  "orderAmount": 38.0,
+  "orderName": "微信点餐订单",
+  "openid": "ew3euwhd7sjw9diwkq"
+}
+22:10:19.878 logback [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@6bb4dd34: startup date [Wed May 02 22:10:05 CST 2018]; root of context hierarchy
+22:10:19.953 logback [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:10:19.982 logback [Thread-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+22:11:11.577 logback [main] INFO  c.u.service.impl.PayServiceImplTest - Starting PayServiceImplTest on DESKTOP-V341JIN with PID 3004 (started by 24219 in D:\sell)
+22:11:11.582 logback [main] INFO  c.u.service.impl.PayServiceImplTest - No active profile set, falling back to default profiles: default
+22:11:11.755 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6bb4dd34: startup date [Wed May 02 22:11:11 CST 2018]; root of context hierarchy
+22:11:12.365 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+22:11:13.295 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:11:13.484 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:11:13.566 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderDetailRepository.
+22:11:13.568 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderMasterRepository.
+22:11:13.569 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductInfoRepository.
+22:11:13.570 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductCategoryRepository.
+22:11:14.284 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:11:14.549 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3ad8b554] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:11:15.620 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+22:11:16.046 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+22:11:16.075 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+22:11:16.231 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+22:11:16.234 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+22:11:16.237 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+22:11:16.320 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22:11:16.704 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+22:11:18.037 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:11:20.320 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6bb4dd34: startup date [Wed May 02 22:11:11 CST 2018]; root of context hierarchy
+22:11:20.484 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.usher.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.usher.controller.BuyerOrderController.create(com.usher.form.OrderForm,org.springframework.validation.BindingResult)
+22:11:20.486 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.usher.VO.ResultVO<java.util.List<com.usher.dto.OrderDTO>> com.usher.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+22:11:20.486 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+22:11:20.486 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+22:11:20.489 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerProductController.list()
+22:11:20.491 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.usher.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+22:11:20.492 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.usher.controller.WechatController.authorize(java.lang.String)
+22:11:20.493 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.usher.controller.WxController.auth(java.lang.String)
+22:11:20.494 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.usher.wx.WxToken.test(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+22:11:20.496 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:11:20.498 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:11:20.554 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:11:20.555 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:11:20.659 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:11:21.346 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+22:11:21.623 logback [main] INFO  c.u.service.impl.PayServiceImplTest - Started PayServiceImplTest in 11.564 seconds (JVM running for 13.491)
+22:11:21.806 logback [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+22:11:22.030 logback [main] INFO  c.usher.service.impl.PayServiceImpl - 【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525170517349514044",
+  "orderAmount": 38.0,
+  "orderName": "微信点餐订单",
+  "openid": "ew3euwhd7sjw9diwkq"
+}
+22:11:23.046 logback [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@6bb4dd34: startup date [Wed May 02 22:11:11 CST 2018]; root of context hierarchy
+22:11:23.064 logback [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:11:23.077 logback [Thread-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+22:12:57.331 logback [main] INFO  c.u.service.impl.PayServiceImplTest - Starting PayServiceImplTest on DESKTOP-V341JIN with PID 31432 (started by 24219 in D:\sell)
+22:12:57.335 logback [main] INFO  c.u.service.impl.PayServiceImplTest - No active profile set, falling back to default profiles: default
+22:12:57.450 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6bb4dd34: startup date [Wed May 02 22:12:57 CST 2018]; root of context hierarchy
+22:12:58.203 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+22:12:58.831 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:12:58.962 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:12:59.030 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderDetailRepository.
+22:12:59.031 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderMasterRepository.
+22:12:59.033 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductInfoRepository.
+22:12:59.034 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductCategoryRepository.
+22:12:59.810 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:13:00.150 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3ad8b554] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:13:01.250 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+22:13:01.581 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+22:13:01.603 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+22:13:01.719 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+22:13:01.721 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+22:13:01.723 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+22:13:01.936 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22:13:02.133 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+22:13:03.200 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:13:05.198 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6bb4dd34: startup date [Wed May 02 22:12:57 CST 2018]; root of context hierarchy
+22:13:05.320 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.usher.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.usher.controller.BuyerOrderController.create(com.usher.form.OrderForm,org.springframework.validation.BindingResult)
+22:13:05.321 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.usher.VO.ResultVO<java.util.List<com.usher.dto.OrderDTO>> com.usher.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+22:13:05.321 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+22:13:05.322 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+22:13:05.323 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerProductController.list()
+22:13:05.325 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.usher.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+22:13:05.325 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.usher.controller.WechatController.authorize(java.lang.String)
+22:13:05.327 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.usher.controller.WxController.auth(java.lang.String)
+22:13:05.330 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.usher.wx.WxToken.test(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+22:13:05.333 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:13:05.333 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:13:05.380 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:13:05.380 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:13:05.454 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:13:06.553 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+22:13:06.956 logback [main] INFO  c.u.service.impl.PayServiceImplTest - Started PayServiceImplTest in 11.272 seconds (JVM running for 13.288)
+22:13:07.141 logback [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+22:13:07.350 logback [main] INFO  c.usher.service.impl.PayServiceImpl - 【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525170517349514044",
+  "orderAmount": 38.0,
+  "orderName": "微信点餐订单",
+  "openid": "ew3euwhd7sjw9diwkq"
+}
+22:13:08.515 logback [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@6bb4dd34: startup date [Wed May 02 22:12:57 CST 2018]; root of context hierarchy
+22:13:08.521 logback [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:13:08.527 logback [Thread-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+22:17:03.054 logback [main] INFO  c.u.service.impl.PayServiceImplTest - Starting PayServiceImplTest on DESKTOP-V341JIN with PID 20388 (started by 24219 in D:\sell)
+22:17:03.056 logback [main] INFO  c.u.service.impl.PayServiceImplTest - No active profile set, falling back to default profiles: default
+22:17:03.116 logback [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6bb4dd34: startup date [Wed May 02 22:17:03 CST 2018]; root of context hierarchy
+22:17:04.032 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+22:17:04.804 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:17:04.928 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:17:04.985 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderDetailRepository.
+22:17:04.987 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.OrderMasterRepository.
+22:17:04.988 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductInfoRepository.
+22:17:04.989 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.usher.repository.ProductCategoryRepository.
+22:17:05.676 logback [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+22:17:06.198 logback [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3ad8b554] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:17:08.196 logback [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+22:17:08.567 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+22:17:08.589 logback [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+22:17:08.703 logback [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+22:17:08.704 logback [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+22:17:08.707 logback [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+22:17:08.754 logback [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22:17:09.047 logback [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+22:17:09.875 logback [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:17:12.204 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6bb4dd34: startup date [Wed May 02 22:17:03 CST 2018]; root of context hierarchy
+22:17:12.341 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.usher.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.usher.controller.BuyerOrderController.create(com.usher.form.OrderForm,org.springframework.validation.BindingResult)
+22:17:12.343 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.usher.VO.ResultVO<java.util.List<com.usher.dto.OrderDTO>> com.usher.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+22:17:12.343 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+22:17:12.344 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+22:17:12.345 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.usher.VO.ResultVO com.usher.controller.BuyerProductController.list()
+22:17:12.346 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.usher.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+22:17:12.346 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.usher.controller.WechatController.authorize(java.lang.String)
+22:17:12.348 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/auth],methods=[GET]}" onto public void com.usher.controller.WxController.auth(java.lang.String)
+22:17:12.349 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.usher.wx.WxToken.test(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+22:17:12.354 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:17:12.355 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:17:12.406 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:17:12.406 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:17:12.475 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:17:13.260 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+22:17:13.680 logback [main] INFO  c.u.service.impl.PayServiceImplTest - Started PayServiceImplTest in 11.623 seconds (JVM running for 13.618)
+22:17:13.926 logback [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+22:17:14.150 logback [main] INFO  c.usher.service.impl.PayServiceImpl - 【微信支付】发起支付, request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1525170517349514044",
+  "orderAmount": 38.0,
+  "orderName": "微信点餐订单",
+  "openid": "ew3euwhd7sjw9diwkq"
+}
+22:17:15.168 logback [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@6bb4dd34: startup date [Wed May 02 22:17:03 CST 2018]; root of context hierarchy
+22:17:15.177 logback [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:17:15.184 logback [Thread-2] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

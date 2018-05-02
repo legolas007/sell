@@ -13,6 +13,7 @@ spring:
     default-property-inclusion: non_null
 
 
+
     initialSize: 5
     minIdle: 5
     maxActive: 20
@@ -29,3 +30,16 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+
+wechat:
+  mpAppId: wxd898fcb01713c658
+  mpAppSecret: 29d8a650db31472aa87800e3b0d739f2
+  mchId: 1409146202
+  mchKey: c976503d34ca432c60136f969fd8d85
+  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: http://wpsell.natapp1.cc/sell/pay/notify
+
+projectUrl:
+  wechatMpAuthorize: http://wpsell.natapp1.cc
+  wechatOpenAuthorize: http://wpsell.natapp1.cc
+  sell: http://wpsell.natapp1.cc

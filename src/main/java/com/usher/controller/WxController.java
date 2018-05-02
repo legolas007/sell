@@ -16,10 +16,16 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/wx")
 @Slf4j
 public class WxController {
+    /**
+     * redirect_uri=/wx/auth?code={}
+     * @param code
+     */
     @GetMapping("/auth")
     public void auth(@RequestParam("code") String code){
         log.info("access to auth");
         log.info("code={}", code);
+
+        //获取userInfo
         String url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx60b5796ca8f45469&secret=f8518a8ee3dfb2e280306d80e8f37623&code=" + code + "&grant_type=authorization_code";
         RestTemplate restTemplate = new RestTemplate();
         String response = restTemplate.getForObject(url, String.class);
