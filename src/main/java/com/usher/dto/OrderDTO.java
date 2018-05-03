@@ -5,7 +5,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.usher.entities.OrderDetail;
 import com.usher.enums.OrderStatusEnum;
+import com.usher.enums.PayStatusEnum;
 import com.usher.utils.Date2Serializer;
+import com.usher.utils.EnumUtil;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -54,5 +56,15 @@ public class OrderDTO {
     private Date updateTime;
 
     List<OrderDetail> orderDetailList;
+
+    @JsonIgnore
+    public OrderStatusEnum getOrderStatusEnum(){
+        return EnumUtil.getByCode(orderStatus,OrderStatusEnum.class);
+    }
+
+    @JsonIgnore
+    public PayStatusEnum getPayStatusEnum(){
+        return EnumUtil.getByCode(payStatus,PayStatusEnum.class);
+    }
 
 }
