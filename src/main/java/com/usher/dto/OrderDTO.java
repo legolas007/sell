@@ -57,7 +57,7 @@ public class OrderDTO {
 
     List<OrderDetail> orderDetailList;
 
-    @JsonIgnore
+    @JsonIgnore//json转对象忽略
     public OrderStatusEnum getOrderStatusEnum(){
         return EnumUtil.getByCode(orderStatus,OrderStatusEnum.class);
     }
