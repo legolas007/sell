@@ -12,9 +12,9 @@
         <div class="container-fluid">
             <div class="row clearfix">
                 <div class="col-md-12 column">
-                    <table class="table table-bordered table-condensed">
+                    <table class="table table-striped table-bordered table-condensed">
                         <thead>
-                        <tr>
+                        <tr class="success">
                             <th>订单id</th>
                             <th>姓名</th>
                             <th>手机号</th>
@@ -38,8 +38,8 @@
                             <td>${orderDTO.getOrderStatusEnum().message}</td>
                             <td>${orderDTO.getPayStatusEnum().message}</td>
                             <td>${orderDTO.createTime}</td>
-                            <td><a href="/sell/seller/order/detail?orderId=${orderDTO.orderId}">详情</a></td>
-                            <td>
+                            <td class="warning"><a href="/sell/seller/order/detail?orderId=${orderDTO.orderId}">详情</a></td>
+                            <td class="danger">
                                 <#if orderDTO.getOrderStatusEnum().message == "新订单">
                                     <a href="/sell/seller/order/cancel?orderId=${orderDTO.orderId}">取消</a>
                                 </#if>

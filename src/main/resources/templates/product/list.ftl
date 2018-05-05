@@ -12,9 +12,9 @@
         <div class="container-fluid">
             <div class="row clearfix">
                 <div class="col-md-12 column">
-                    <table class="table table-bordered table-condensed">
+                    <table class="table table-striped table-bordered table-condensed">
                         <thead>
-                        <tr>
+                        <tr class="success">
                             <th>商品id</th>
                             <th>名称</th>
                             <th>图片</th>
@@ -40,8 +40,8 @@
                             <td>${productInfo.categoryType}</td>
                             <td>${productInfo.createTime}</td>
                             <td>${productInfo.updateTime}</td>
-                            <td><a href="/sell/seller/product/index?productId=${productInfo.productId}">修改</a></td>
-                            <td>
+                            <td class="warning"> <a href="/sell/seller/product/index?productId=${productInfo.productId}">修改</a></td>
+                            <td class="danger">
                                 <#if productInfo.getProductStatusEnum().message == "在架">
                                     <a href="/sell/seller/product/off_sale?productId=${productInfo.productId}">下架</a>
                                 <#else>
