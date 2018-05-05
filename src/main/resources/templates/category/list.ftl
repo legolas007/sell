@@ -14,7 +14,7 @@
                 <div class="col-md-12 column">
                     <table class="table table-bordered table-condensed">
                         <thead>
-                        <tr>
+                        <tr class="success">
                             <th>类目id</th>
                             <th>名字</th>
                             <th>type</th>
@@ -32,7 +32,7 @@
                             <td>${category.categoryType}</td>
                             <td>${category.createTime}</td>
                             <td>${category.updateTime}</td>
-                            <td><a href="/sell/seller/category/index?categoryId=${category.categoryId}">修改</a></td>
+                            <td class="warning"><a href="/sell/seller/category/index?categoryId=${category.categoryId}">修改</a></td>
                         </tr>
                         </#list>
                         </tbody>

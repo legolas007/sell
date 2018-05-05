@@ -15,7 +15,7 @@
                 <div class="col-md-4 column">
                     <table class="table table-bordered">
                         <thead>
-                        <tr>
+                        <tr class="success">
                             <th>订单id</th>
                             <th>订单总金额</th>
                         </tr>
@@ -31,9 +31,9 @@
 
             <#--订单详情表数据-->
                 <div class="col-md-12 column">
-                    <table class="table table-bordered">
+                    <table class="table table-striped table-bordered">
                         <thead>
-                        <tr>
+                        <tr class="success">
                             <th>商品id</th>
                             <th>商品名称</th>
                             <th>价格</th>
