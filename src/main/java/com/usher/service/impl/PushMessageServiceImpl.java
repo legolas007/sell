@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * @Author: Usher
  * @Description:
- * 推送消息
+ * 微信推送消息
  */
 @Slf4j
 @Service
