@@ -32,7 +32,7 @@
     <!-- logback为java中的包 -->
     <logger name="com.usher"/>
     <!--logback.LogbackDemo：类的全路径 -->
-    <logger name="com.usher.service.HelloService" level="WARN" additivity="false">
+    <logger name="com.usher.entities" level="trace" additivity="false">
         <appender-ref ref="console"/>
     </logger>
 </configuration>

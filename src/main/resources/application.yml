@@ -49,3 +49,13 @@ projectUrl:
   wechatMpAuthorize: http://wpsell.natapp1.cc
   wechatOpenAuthorize: http://wpsell.natapp1.cc
   sell: http://wpsell.natapp1.cc
+
+mybatis:
+  # 指定全局配置文件位置
+  config-location: classpath:mybatis/mybatis-config.xml
+  # 指定sql映射文件位置
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+logging:
+  level:
+    com.usher.entities.mapper: debug
