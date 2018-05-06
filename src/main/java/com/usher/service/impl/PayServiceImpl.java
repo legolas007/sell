@@ -43,13 +43,19 @@ public class PayServiceImpl implements PayService{
         return payResponse;
     }
 
-    @Override
-    public PayResponse notify(String notifyData) {
-        return null;
-    }
 
     @Override
+    public PayResponse notify(String notifyData) {
+        //TODO
+        return null;
+    }
+    /**
+     * 退款
+     * @param orderDTO
+     */
+    @Override
     public RefundResponse refund(OrderDTO orderDTO) {
+        //TODO
         return null;
     }
 }
