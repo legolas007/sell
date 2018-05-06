@@ -2,6 +2,8 @@ package com.usher.VO;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @Author: Usher
  * @Description:
@@ -9,7 +11,9 @@ import lombok.Data;
  * http请求返回的最外层对象
  */
 @Data
-public class ResultVO <T>{
+public class ResultVO <T> implements Serializable{
+
+    private static final long serialVersionUID = -1361990424274277560L;
     /**
      * 错误码
      */
