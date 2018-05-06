@@ -19,7 +19,7 @@ public class SellExceptionHandler {
     private ProjectUrlConfig projectUrlConfig;
 
     //拦截登录异常
-    //http://sell.natapp4.cc/sell/wechat/qrAuthorize?returnUrl=http://sell.natapp4.cc/sell/seller/login
+    //http://wpsell.natapp1.cc/sell/wechat/qrAuthorize?returnUrl=http://wpsell.natapp1.cc/sell/seller/login
     @ExceptionHandler(value = SellerAuthorizeException.class)
     public ModelAndView handlerAuthorizeException(){
         return new ModelAndView("redirect:"
