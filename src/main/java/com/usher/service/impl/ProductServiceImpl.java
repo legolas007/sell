@@ -9,6 +9,7 @@ import com.usher.exception.SellException;
 import com.usher.repository.ProductInfoRepository;
 import com.usher.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
