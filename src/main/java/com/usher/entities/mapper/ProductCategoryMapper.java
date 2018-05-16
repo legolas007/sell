@@ -2,6 +2,7 @@ package com.usher.entities.mapper;
 
 import com.usher.entities.ProductCategory;
 import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
@@ -11,6 +12,7 @@ import java.util.Map;
  * @Description:
  */
 @Mapper
+@Repository
 public interface ProductCategoryMapper {
 
     //xml
